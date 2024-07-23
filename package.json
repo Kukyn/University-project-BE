@@ -1,0 +1,34 @@
+{
+  "name": "my-package",
+  "scripts": {
+    "live": "nodemon -e ts,js --exec ts-node ./src/app.ts",
+    "server": "node ./out/app.js",
+    "build": "prettier . --write && yarn tsc"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.5",
+    "bcrypt": "^5.1.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0",
+    "reflect-metadata": "^0.2.2",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.4.4",
+    "ulid": "^2.3.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "prettier": "^3.2.5",
+    "tsconfig-paths": "^4.2.0"
+  }
+}

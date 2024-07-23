@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./out/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node16",
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./",
+    "paths": {
+      "@core/controllers": ["./src/core/controllers/"],
+      "@core/enums": ["./src/core/enums/"],
+      "@core/routers": ["./src/core/routers/"],
+      "@core/utils": ["./src/core/utils/"],
+      "@core/servers": ["./src/core/servers/"],
+      "@core/middlewares": ["./src/core/middlewares/"],
+      "@core/entities": ["./src/core/entities/"],
+      "@core/types": ["./src/core/types/"],
+      "@share-fare/server": ["./src/servers/share-fare/server"],
+      "@share-fare/modules/car": ["./src/servers/share-fare/modules/car/"],
+      "@share-fare/modules/user": ["./src/servers/share-fare/modules/user/"],
+      "@share-fare/modules/offer": ["./src/servers/share-fare/modules/offer/"]
+    }
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
